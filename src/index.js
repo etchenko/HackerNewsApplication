@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 
+const stories= [
+  {
+    title: 'Story',
+    url:'https://google.com',
+    author: 'John Doe',
+    num_comments: 0,
+    points: 4,
+    objectID: 0,
+  }
+];
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <App stories={stories} />,
   document.getElementById('root')
 );
 
