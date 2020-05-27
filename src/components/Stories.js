@@ -13,11 +13,11 @@ const COLUMNS = {
   },
   author: {
     label: 'Author',
-    width: '30%',
+    width: '20%',
   },
   comments: {
     label: 'Comments',
-    width: '10%',
+    width: '20%',
   },
   points : {
     label: 'Points',

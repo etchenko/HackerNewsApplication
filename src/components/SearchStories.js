@@ -6,7 +6,6 @@ import Button from './Button';
 class SearchStories extends Component {
   constructor(props) {
     super(props);
-
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
     this.state = {
@@ -17,8 +16,7 @@ class SearchStories extends Component {
   onSubmit(event) {
     const { query } = this.state;
     if (query) {
-      this.props.onFetchStories(query)
-
+      this.props.onFetchStories(query);
       this.setState({query: '' });
     }
 

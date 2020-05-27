@@ -7,6 +7,7 @@ import rootSaga from '../sagas';
 const logger = createLogger();
 const saga = createSagaMiddleware();
 
+
 const store = createStore(
   rootReducer,
   undefined,

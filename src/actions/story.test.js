@@ -9,7 +9,6 @@ describe('story action', () => {
       stories,
     };
     const action = doAddStories(stories);
-
     expect(action).toEqual(expectedAction);
   });
 });
