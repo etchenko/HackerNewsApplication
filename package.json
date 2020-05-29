@@ -2,6 +2,7 @@
   "name": "react-redux-tutorial",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://conqueror1776.github.io/HackerNewsApplication/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -38,6 +39,7 @@
     ]
   },
   "devDependencies": {
-    "deep-freeze": "0.0.1"
+    "deep-freeze": "0.0.1",
+    "gh-pages": "^2.2.0"
   }
 }
