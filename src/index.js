@@ -12,7 +12,7 @@ ReactDOM.render(
   //<HashRouter basename={process.env.PUBLIC_URL}>
     <Provider store={store}>
       <App />
-    </Provider>
+    </Provider>,
   //</HashRouter>,
   document.getElementById('root')
 );
