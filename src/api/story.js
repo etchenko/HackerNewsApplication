@@ -8,7 +8,7 @@ const getInitialStories = self =>
   fetch("https://hn.algolia.com/api/v1")
     .then(response => response.json());
 
-export {
+export default {
   fetchStories,
   getInitialStories,
 };

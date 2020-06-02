@@ -1,6 +1,6 @@
 import { call, put } from 'redux-saga/effects';
 import { doAddStories, doFetchErrorStories } from '../actions/story';
-import { fetchStories } from '../api/story';
+import fetchStories  from '../api/story';
 
 function* handleFetchStories(action) {
   const { query } = action;
@@ -13,6 +13,6 @@ function* handleFetchStories(action) {
   }
 }
 
-export {
+export default {
   handleFetchStories,
 };
