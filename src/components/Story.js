@@ -1,6 +1,6 @@
 import React from 'react';
 import './Story.css';
-import ButtonInline from './ButtonInline.js';
+import ButtonInline from './ButtonInline';
 import { connect } from 'react-redux';
 import { doArchiveStory } from '../actions/archive';
 
