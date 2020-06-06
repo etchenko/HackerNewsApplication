@@ -1,9 +1,9 @@
-import React from 'react';
+import  React, { Component }  from 'react';
 import { connect } from 'react-redux';
 import { doFetchStories } from '../actions/story';
-import Button from './Button';
+import  Button  from './Button';
 
-class SearchStories extends React.Component {
+class SearchStories extends Component {
   constructor(props) {
     super(props);
     this.onChange = this.onChange.bind(this);
