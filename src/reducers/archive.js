@@ -2,7 +2,7 @@ import { STORY_ARCHIVE }  from '../constants/actionTypes';
 
 const INITIAL_STATE = [];
 
-const applyArchiveStory = (state, action) =>
+const applyArchiveStory = (state = INITIAL_STATE, action) =>
   [ ...state, action.id];
 
 function archiveReducer(state = INITIAL_STATE, action) {

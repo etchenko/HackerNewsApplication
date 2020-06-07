@@ -2,7 +2,7 @@ import { call, put } from 'redux-saga/effects';
 import { doAddStories, doFetchErrorStories } from '../actions/story';
 import { fetchStories }  from '../api/story';
 
-function* handleFetchStories(action) {
+function* handleFetchStories(action: any) {
   const { query } = action;
 
   try {
