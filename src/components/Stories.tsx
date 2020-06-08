@@ -28,13 +28,18 @@ const COLUMNS = {
   },
 };
 
-const Stories = ({ stories, error }) =>
+type StoriesProps = {
+  stories: any;
+  error: any;
+}
+
+const Stories: React.FC<StoriesProps> = ({ stories, error }) =>
 <div className="stories">
   <StoriesHeader columns={COLUMNS}/>
 
     { error && <p className="error">Something went wrong ...</p> }
 
-    {(stories || []).map(story =>
+    {(stories || []).map((story: any) =>
       <Story
         key={story.objectID}
         story={story}
@@ -43,19 +48,28 @@ const Stories = ({ stories, error }) =>
     )}
   </div>
 
-const StoriesHeader = ({ columns }) =>
+type StoriesHeaderProps = {
+  columns: any;
+}
+
+const StoriesHeader: React.FC<StoriesHeaderProps> = ({ columns }) =>
   <div className='stories-header'>
-    {Object.keys(COLUMNS).map(key =>
-      <span
-        key={key}
-        style={{ width: COLUMNS[key].width }}
-      >
-        {COLUMNS[key].label}
-      </span>
-    )}
+    {
+      //TODO: FIX Header Mapping
+    }
   </div>
 
-  const mapStateToProps = state => ({
+ /*
+ {Object.keys(COLUMNS).map(key =>
+   <span
+     key={key}
+     style={{width: COLUMNS[key].width }}
+   >
+     {COLUMNS[key].label}
+   </span>
+ )}
+ */
+  const mapStateToProps = (state: any) => ({
     stories: getReadableStories(state),
     error: getFetchError(state),
   });

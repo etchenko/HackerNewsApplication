@@ -4,7 +4,13 @@ import ButtonInline from './ButtonInline';
 import { connect } from 'react-redux';
 import { doArchiveStory } from '../actions/archive';
 
-const Story = ({ story , columns, onArchive}) => {
+type StoryProps = {
+  story: any;
+  columns: any;
+  onArchive: any;
+}
+
+const Story: React.FC<StoryProps> = ({ story, columns, onArchive}) => {
   const {
     title,
     url,
@@ -37,8 +43,8 @@ const Story = ({ story , columns, onArchive}) => {
   );
 }
 
-const mapDispatchToProps = dispatch => ({
-  onArchive: id => dispatch(doArchiveStory(id)),
+const mapDispatchToProps = (dispatch: any) => ({
+  onArchive: (id: string) => dispatch(doArchiveStory(id)),
 });
 
 export default connect(

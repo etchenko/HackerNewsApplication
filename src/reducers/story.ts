@@ -1,9 +1,10 @@
 import { STORIES_ADD, STORIES_FETCH_ERROR } from '../constants/actionTypes';
 
-interface STATE_TYPE {
+export interface STATE_TYPE {
   stories: any[];
   error: unknown;
 }
+
 const INITIAL_STATE = {
   stories: [],
   error: null,
