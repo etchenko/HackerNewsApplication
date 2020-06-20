@@ -1,4 +1,4 @@
-https://conqueror1776.github.io/HackerNewsApplication/
+https://etchenko.github.io/HackerNewsApplication/
 This project was created following the tutorial of Robin Wieruch. It is a Hacker News Application which can be used to search for specific topics withing hacker news
 
 ## Languages
